@@ -1,4 +1,0 @@
-gitpython
-python-magic
-salt
-tabulate

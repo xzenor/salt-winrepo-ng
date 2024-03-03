@@ -1,7 +1,0 @@
-root_dir: /tmp/salt
-disable_fqdn_grains: true
-file_client: local
-# Pretend that we're running on Windows
-providers:
-  pkg: win_pkg
-  winrepo: winrepo
