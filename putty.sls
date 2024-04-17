@@ -1,5 +1,5 @@
 putty:
-{% for version in ['0.80', '0.79', '0.78', '0.77', '0.76', '0.75', '0.74', '0.73', '0.72', '0.71', '0.70', '0.69', '0.68'] %}
+{% for version in ['0.81'] %}
   '{{ version }}.0.0':
     {% if grains['cpuarch'] == 'AMD64' %}
     {% set ver_arch = " (64-bit)" %}
@@ -21,7 +21,7 @@ putty:
 {% else %}
   {% set PROGRAM_FILES = "%ProgramFiles%" %}
 {% endif %}
-{% for version in ['0.67', '0.66', '0.65', '0.64'] %}
+{% for version in ['0.80', '0.79', '0.78', '0.77', '0.76', '0.75', '0.74', '0.73', '0.72', '0.71', '0.70', '0.69', '0.68', '0.67', '0.66', '0.65', '0.64'] %}
   '{{ version }}':
     full_name:  'PuTTY release {{ version }}'
     installer: 'https://the.earth.li/~sgtatham/putty/{{ version }}/x86/putty-{{ version }}-installer.exe'
