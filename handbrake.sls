@@ -1,6 +1,7 @@
 # Source: https://handbrake.fr
 handbrake:
 {% for version in [
+  '1.8.0',
   '1.7.3',
   '1.7.2',
   '1.7.1',
